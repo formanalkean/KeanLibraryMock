@@ -60,7 +60,7 @@ export default function Home() {
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Welcome to Kean University Library</h1>
             <p className="text-xl mb-8 max-w-3xl mx-auto">
-              Your gateway to research, learning, and academic success
+              Your gateway to Research, Learning, and Academic Success
             </p>
             
             {/* Search Box */}

@@ -7,7 +7,7 @@ export default function Header() {
 
   return (
     <header className="bg-[#13294B] text-white">
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-4 md:py-6">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <a href="/" className="flex items-center">
@@ -17,12 +17,11 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <a href="/search" className="text-white hover:text-[#9A8A62]">Search</a>
+          <a href="/" className="text-white hover:text-[#9A8A62]">Home</a>
+            <a href="/resultpage" className="text-white hover:text-[#9A8A62]">Search</a>
             <a href="/services" className="text-white hover:text-[#9A8A62]">Services</a>
-            <a href="/resources" className="text-white hover:text-[#9A8A62]">Resources</a>
-            <a href="/research" className="text-white hover:text-[#9A8A62]">Research</a>
             <a href="/about" className="text-white hover:text-[#9A8A62]">About</a>
-            <a href="/resultpage" className="text-white hover:text-[#9A8A62]">Pages</a>
+            <a href="/auth" className="text-white hover:text-[#9A8A62]">Account</a>
           </nav>
 
           {/* Mobile Menu Button */}

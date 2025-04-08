@@ -90,10 +90,20 @@ export default function SearchResultsPage() {
       <Header />
       <main className="flex-grow bg-gray-50 py-12">
         <div className="container mx-auto px-4">
-          <h1 className="text-3xl font-bold text-[#13294B] mb-6 text-center">Search Results</h1>
+          <h1 className="text-3xl font-bold text-[#13294B] mb-6 text-center">Search Kean Library Resources</h1>
+          
           <div className="mb-10">
             <SearchBox />
+            <div className="flex justify-center mt-6">
+              <a
+                href="/recent-activities"
+                className="inline-block bg-[#13294B] text-white font-medium py-3 px-6 rounded-full shadow-md hover:bg-[#0A1A38] transition"
+              >
+                Recent Activities
+              </a>
+            </div>
           </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {results.map((item, index) => (
               <ResultCard key={index} {...item} />
